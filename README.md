@@ -42,6 +42,7 @@ not required. This can be achieved with the localStorage JavaScript API. You sho
 
 ## Screenshot
 
+![Screenshot from 2024-02-25 09-30-53](https://github.com/adarsh-fxz/Weather-Forecast-Web-App/assets/116485356/f22193f9-77cb-499f-9913-137830c1804f)
 
 ## Link
 
