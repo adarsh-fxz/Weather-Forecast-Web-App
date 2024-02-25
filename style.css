@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('img/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    color: #eeeeeeee;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    max-width: 900px;
+    border-radius: 15px;
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+    display: flex;
+}
+
+.left {
+    width: 50%;
+}
+
+.right {
+    width: 55%;
+    padding-inline: 15px;
+    margin: 15px;
+    padding-block: 20px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin: 10px;
+}
+
+#cityInput {
+    width: 280px;
+    height: 45px;
+    min-width: 150px;
+}
+
+.search input {
+    padding-left: 10px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+}
+
+.search button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #eeeeeeee;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    width: 80px;
+}
+
+.search button:hover {
+    background-color: #0069D9;
+}
+
+#weatherInfo {
+    margin: 0 10px 10px 10px;
+    padding: 0 20px 20px 20px;
+}
+
+.city {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.city .fa-solid {
+    margin-right: 15px;
+}
+
+#weatherInfo h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+#weatherInfo h2 {
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0.8px;
+}
+
+#weatherInfo h3 {
+    font-size: 16px;
+    text-align: center;
+}
+
+#weatherInfo h4 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#weatherInfo img {
+
+    width: 150px;
+    height: 150px;
+}
+
+.weatherImg {
+    text-align: center;
+}
+
+#weatherInfo figure img {
+    width: 35px;
+    height: 35px;
+}
+
+#weatherInfo .time {
+    text-align: left;
+}
+
+#weatherInfo p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.feelsLike {
+    margin-bottom: 20px;
+}
+
+#weatherInfo .dateTime p {
+    margin-bottom: 7px;
+    letter-spacing: 0.7px;
+}
+
+.weatherInfo2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.weatherInfo2 figure {
+    text-align: center;
+}
+
+.weatherInfo2 p {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.humidity {
+    text-align: center;
+}
+
+hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.384);
+}
+
+hr:last-child {
+    display: none;
+}
+
+.vl {
+    margin: 30px 0 30px 0;
+    border-left: 1px solid rgba(255, 255, 255, 0.384);
+}
+
+/* past weather data */
+
+.weekContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 90%; */
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.right h1 {
+    font-weight: 800;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 0.7px;
+}
+
+.db-info {
+    width: 100%;
+    border-radius: 8px;
+    /* display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2.5fr 2.5fr 1.5fr; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.week-box {
+    text-align: center;
+}
+
+.db-info p {
+    font-weight: 600;
+}
+
+.week-box .date {
+    text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+    color: #eeeeeeee;
+    margin-bottom: 3px;
+}
+
+.week-box img {
+    width: 50px;
+    height: 25px;
+    object-fit: contain;
+    object-position: center;
+}
+
+img {
+    overflow: visible;
+}
+
+#weatherInfo .error figure img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    margin: 0 auto 20px auto;
+
+}
+
+footer {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #b8b8b8;
+    letter-spacing: 0.7px;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .body {
+        height: 100%;
+        scroll-behavior: smooth;
+    }
+
+    .container {
+        flex-direction: column;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .search {
+        margin-top: 500px;
+    }
+
+    .search #cityInput {
+        width: 100%;
+    }
+
+    .search button {
+        width: 40%;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .right h1 {
+        margin: 0;
+    }
+
+    .weekContainer {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .week-box {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    footer{
+        width: 100%;
+        margin-top: 0;
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(4px);
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 13px;
+    }
+}
